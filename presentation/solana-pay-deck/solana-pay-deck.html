@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="minimal-white">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="x-content-type" content="presentation" />
+<meta name="x-presentation-version" content="1.0" />
+<meta name="x-presentation-indicator" content="deck-stage .slide" />
+<title>Solana Group Collection</title>
+<link rel="stylesheet" href="./_shared/fonts.css">
+<link rel="stylesheet" href="./_shared/base.css">
+<link id="theme-link" rel="stylesheet" href="./_shared/themes/minimal-white.css">
+<link rel="stylesheet" href="./_shared/animations/animations.css">
+<style>
+  /* Apple-style refinements */
+  .slide { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Helvetica Neue', sans-serif; }
+  .h1 { letter-spacing: -0.04em; font-weight: 700; }
+  .h2 { letter-spacing: -0.035em; font-weight: 700; }
+  .apple-eyebrow { font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #999; }
+  .apple-gradient { background: linear-gradient(135deg, #14F195 0%, #9945FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .soft-bg { background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%); }
+  .hero-gradient { background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(20,241,149,0.08), transparent 70%), radial-gradient(ellipse 60% 50% at 80% 100%, rgba(153,69,255,0.06), transparent 70%); }
+  .card-apple { border: 1px solid rgba(0,0,0,0.06); background: #fff; border-radius: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+  .progress-track { height: 14px; background: #f0f0f2; border-radius: 999px; overflow: hidden; }
+  .progress-fill { height: 100%; background: linear-gradient(90deg, #14F195, #9945FF); border-radius: 999px; transition: width 1.2s cubic-bezier(.4,0,.2,1); }
+  .step-num { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg,#14F195,#9945FF); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; background: #f5f5f7; color: #1d1d1f; font-size: 13px; font-weight: 500; }
+  .big-stat { font-size: 120px; font-weight: 800; letter-spacing: -0.05em; line-height: 1; }
+  .deck-footer { color: #bbb; font-size: 12px; }
+</style>
+</head>
+<body data-themes="minimal-white,glassmorphism" data-theme-base="./_shared/themes/">
+<deck-stage width="1920" height="1080">
+
+  <!-- 1. Cover -->
+  <section class="slide center tc hero-gradient" data-deck-label="Cover">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div class="apple-eyebrow anim-fade-down" data-anim="fade-down" style="margin-bottom: 40px;">Solana · On-Chain Collection</div>
+      <h1 class="h1 anim-fade-up" data-anim="fade-up" style="font-size: 96px; line-height: 1.05;">
+        Group Collection,<br>reimagined <span class="apple-gradient">on-chain</span>.
+      </h1>
+      <p class="lede anim-fade-up" data-anim="fade-up" style="margin-top: 36px; font-size: 26px; color: #6e6e73; max-width: 720px; margin-left: auto; margin-right: auto;">
+        One link. Everyone chips in. Progress updates itself — straight from the blockchain.
+      </p>
+      <div class="row" style="justify-content: center; gap: 14px; margin-top: 56px;">
+        <span class="chip">🎯 Set a target</span>
+        <span class="chip">🔗 Share a link</span>
+        <span class="chip">📈 Watch it grow</span>
+      </div>
+    </div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; left: 72px;"><span class="dim2">Solana Group Collection</span></div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; right: 72px;"><span class="slide-number" data-current="1" data-total="10"></span></div>
+    <div class="notes">Cover slide. Introduce Solana Group Collection — a tool for collecting crypto from multiple people with live on-chain progress tracking.</div>
+  </section>
+
+  <!-- 2. TOC -->
+  <section class="slide" data-deck-label="Contents">
+    <div class="apple-eyebrow" style="margin-bottom: 24px;">What we'll cover</div>
+    <h2 class="h2 anim-fade-up" data-anim="fade-up" style="font-size: 56px; margin-bottom: 64px;">Four chapters.</h2>
+    <div class="grid g2 anim-stagger-list" data-anim-target style="max-width: 1100px; gap: 28px;">
+      <div class="card-apple" style="padding: 36px;">
+        <div class="row" style="gap: 24px; align-items: flex-start;">
+          <div class="step-num" style="flex-shrink: 0;">01</div>
+          <div>
+            <h3 style="font-size: 24px; margin: 0 0 8px; letter-spacing: -0.02em;">The Problem</h3>
+            <p class="dim" style="font-size: 16px; line-height: 1.5;">Why splitting crypto payments today is friction-filled and opaque.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-apple" style="padding: 36px;">
+        <div class="row" style="gap: 24px; align-items: flex-start;">
+          <div class="step-num" style="flex-shrink: 0;">02</div>
+          <div>
+            <h3 style="font-size: 24px; margin: 0 0 8px; letter-spacing: -0.02em;">The Solution</h3>
+            <p class="dim" style="font-size: 16px; line-height: 1.5;">A single collection link that anyone can pay into.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-apple" style="padding: 36px;">
+        <div class="row" style="gap: 24px; align-items: flex-start;">
+          <div class="step-num" style="flex-shrink: 0;">03</div>
+          <div>
+            <h3 style="font-size: 24px; margin: 0 0 8px; letter-spacing: -0.02em;">Live Progress</h3>
+            <p class="dim" style="font-size: 16px; line-height: 1.5;">On-chain scanning that counts every transfer — even direct ones.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-apple" style="padding: 36px;">
+        <div class="row" style="gap: 24px; align-items: flex-start;">
+          <div class="step-num" style="flex-shrink: 0;">04</div>
+          <div>
+            <h3 style="font-size: 24px; margin: 0 0 8px; letter-spacing: -0.02em;">The Tech</h3>
+            <p class="dim" style="font-size: 16px; line-height: 1.5;">Go + Next.js + Solana. Built for speed and transparency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; left: 72px;"><span class="dim2">Solana Group Collection</span></div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; right: 72px;"><span class="slide-number" data-current="2" data-total="10"></span></div>
+    <div class="notes">Agenda: four chapters covering the problem, solution, live progress feature, and tech stack.</div>
+  </section>
+
+  <!-- 3. Section: The Problem -->
+  <section class="slide center tc" data-deck-label="The Problem" style="background: #1d1d1f;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <div class="apple-eyebrow anim-fade-down" data-anim="fade-down" style="color: #86868b; margin-bottom: 32px;">Chapter 01 · The Problem</div>
+      <h1 class="h1 anim-rise-in" data-anim="rise-in" style="font-size: 96px; color: #f5f5f7; line-height: 1.05;">
+        Splitting crypto<br>should be <span style="color: #14F195;">simple</span>.
+      </h1>
+      <p class="lede" style="color: #a1a1a6; font-size: 22px; margin-top: 32px;">
+        Today it's anything but.
+      </p>
+    </div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; left: 72px; color: #555;"><span>Solana Group Collection</span></div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; right: 72px; color: #555;"><span class="slide-number" data-current="3" data-total="10"></span></div>
+    <div class="notes">Section divider introducing the problem. Dark theme for contrast.</div>
+  </section>
+
+  <!-- 4. Problem details -->
+  <section class="slide soft-bg" data-deck-label="The Friction">
+    <div class="apple-eyebrow" style="margin-bottom: 24px;">Why it's broken</div>
+    <h2 class="h2 anim-fade-up" data-anim="fade-up" style="font-size: 48px; margin-bottom: 64px;">Three frictions we remove.</h2>
+    <div class="grid g3 anim-stagger-list" data-anim-target style="gap: 32px;">
+      <div class="card-apple" style="padding: 40px;">
+        <div style="font-size: 48px; margin-bottom: 20px;">📝</div>
+        <h3 style="font-size: 24px; margin: 0 0 12px; letter-spacing: -0.02em;">Re-entering details</h3>
+        <p class="dim" style="font-size: 15px; line-height: 1.6; color: #6e6e73;">Every payer manually enters the amount and address. Errors are expensive and irreversible.</p>
+      </div>
+      <div class="card-apple" style="padding: 40px;">
+        <div style="font-size: 48px; margin-bottom: 20px;">🤷</div>
+        <h3 style="font-size: 24px; margin: 0 0 12px; letter-spacing: -0.02em;">No visibility</h3>
+        <p class="dim" style="font-size: 15px; line-height: 1.6; color: #6e6e73;">Who paid? How much is collected? Nobody knows without manually scanning the chain.</p>
+      </div>
+      <div class="card-apple" style="padding: 40px;">
+        <div style="font-size: 48px; margin-bottom: 20px;">🔗</div>
+        <h3 style="font-size: 24px; margin: 0 0 12px; letter-spacing: -0.02em;">Link-only accounting</h3>
+        <p class="dim" style="font-size: 15px; line-height: 1.6; color: #6e6e73;">Direct transfers to the address get lost. There's no single source of truth.</p>
+      </div>
+    </div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; left: 72px;"><span class="dim2">Solana Group Collection</span></div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; right: 72px;"><span class="slide-number" data-current="4" data-total="10"></span></div>
+    <div class="notes">Three pain points: manual entry, no visibility, and direct transfers being lost.</div>
+  </section>
+
+  <!-- 5. Section: The Solution -->
+  <section class="slide center tc" data-deck-label="The Solution" style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);">
+    <div style="max-width: 1000px; margin: 0 auto;">
+      <div class="apple-eyebrow anim-fade-down" data-anim="fade-down" style="color: #94a3b8; margin-bottom: 32px;">Chapter 02 · The Solution</div>
+      <h1 class="h1 anim-rise-in" data-anim="rise-in" style="font-size: 88px; color: #f8fafc; line-height: 1.05;">
+        One link.<br>Everyone <span class="apple-gradient">chips in</span>.
+      </h1>
+      <p class="lede" style="color: #cbd5e1; font-size: 22px; margin-top: 32px;">
+        Create a collection. Share the link. The blockchain does the rest.
+      </p>
+    </div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; left: 72px; color: #475569;"><span>Solana Group Collection</span></div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; right: 72px; color: #475569;"><span class="slide-number" data-current="5" data-total="10"></span></div>
+    <div class="notes">Solution introduction: one link, everyone contributes, blockchain handles tracking.</div>
+  </section>
+
+  <!-- 6. How it works -->
+  <section class="slide soft-bg" data-deck-label="How It Works">
+    <div class="apple-eyebrow" style="margin-bottom: 24px;">How it works</div>
+    <h2 class="h2 anim-fade-up" data-anim="fade-up" style="font-size: 48px; margin-bottom: 72px;">From idea to funded, in four steps.</h2>
+    <div class="grid g4 anim-stagger-list" data-anim-target style="gap: 28px;">
+      <div style="text-align: center;">
+        <div class="step-num" style="margin: 0 auto 24px;">1</div>
+        <h3 style="font-size: 20px; margin: 0 0 10px;">Set a target</h3>
+        <p class="dim" style="font-size: 14px; color: #6e6e73; line-height: 1.5;">Enter title, amount &amp; currency (SOL / USDC), and your wallet address.</p>
+      </div>
+      <div style="text-align: center;">
+        <div class="step-num" style="margin: 0 auto 24px;">2</div>
+        <h3 style="font-size: 20px; margin: 0 0 10px;">Share the link</h3>
+        <p class="dim" style="font-size: 14px; color: #6e6e73; line-height: 1.5;">Get a unique collection page. Send it to everyone who's chipping in.</p>
+      </div>
+      <div style="text-align: center;">
+        <div class="step-num" style="margin: 0 auto 24px;">3</div>
+        <h3 style="font-size: 20px; margin: 0 0 10px;">Pay any way</h3>
+        <p class="dim" style="font-size: 14px; color: #6e6e73; line-height: 1.5;">Through the page with Phantom, or send directly to the address.</p>
+      </div>
+      <div style="text-align: center;">
+        <div class="step-num" style="margin: 0 auto 24px;">4</div>
+        <h3 style="font-size: 20px; margin: 0 0 10px;">Watch it grow</h3>
+        <p class="dim" style="font-size: 14px; color: #6e6e73; line-height: 1.5;">Progress updates live. Every contributor is recorded on-chain.</p>
+      </div>
+    </div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; left: 72px;"><span class="dim2">Solana Group Collection</span></div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; right: 72px;"><span class="slide-number" data-current="6" data-total="10"></span></div>
+    <div class="notes">Four-step flow: set target, share link, pay any way, watch progress.</div>
+  </section>
+
+  <!-- 7. Live progress demo -->
+  <section class="slide soft-bg" data-deck-label="Live Progress">
+    <div class="apple-eyebrow" style="margin-bottom: 24px;">Chapter 03 · Live Progress</div>
+    <div class="row" style="gap: 80px; align-items: center; margin-top: 24px;">
+      <div style="flex: 1;">
+        <h2 class="h2 anim-fade-up" data-anim="fade-up" style="font-size: 52px; line-height: 1.1; margin-bottom: 28px;">
+          Progress you can <span class="apple-gradient">actually trust</span>.
+        </h2>
+        <p class="dim" style="font-size: 19px; color: #6e6e73; line-height: 1.6; margin-bottom: 40px;">
+          Every transaction is read directly from the Solana blockchain. No manual bookkeeping, no missed payments. The bar moves itself.
+        </p>
+        <div style="display: flex; gap: 40px;">
+          <div>
+            <div class="big-stat apple-gradient counter" data-to="5">0</div>
+            <p class="dim" style="font-size: 15px; color: #6e6e73;">contributors</p>
+          </div>
+          <div>
+            <div class="big-stat apple-gradient"><span class="counter" data-to="100">0</span>%</div>
+            <p class="dim" style="font-size: 15px; color: #6e6e73;">funded</p>
+          </div>
+        </div>
+      </div>
+      <div style="flex: 1;">
+        <div class="card-apple" style="padding: 44px;">
+          <div class="row" style="justify-content: space-between; align-items: baseline; margin-bottom: 16px;">
+            <span style="font-size: 15px; color: #6e6e73;">Team Dinner Split</span>
+            <span style="font-size: 22px; font-weight: 700;">0.012 <span style="font-size: 14px; color: #6e6e73; font-weight: 500;">/ 0.01 SOL</span></span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 100%;"></div>
+          </div>
+          <div class="row" style="justify-content: space-between; margin-top: 12px;">
+            <span style="font-size: 13px; color: #86868b;">120% funded · Goal reached</span>
+            <span style="font-size: 13px; color: #14F195; font-weight: 600;">✓ Completed</span>
+          </div>
+          <div style="margin-top: 32px; border-top: 1px solid #f0f0f2; padding-top: 20px;">
+            <p style="font-size: 13px; color: #86868b; margin: 0 0 12px;">Recent contributions</p>
+            <div class="row" style="justify-content: space-between; margin-bottom: 10px;">
+              <span style="font-family: monospace; font-size: 13px; color: #424245;">7xKXtg...83TZ</span>
+              <span style="font-size: 13px; font-weight: 600;">+0.004 SOL</span>
+            </div>
+            <div class="row" style="justify-content: space-between; margin-bottom: 10px;">
+              <span style="font-family: monospace; font-size: 13px; color: #424245;">DfNzG2...3f9a</span>
+              <span style="font-size: 13px; font-weight: 600;">+0.003 SOL</span>
+            </div>
+            <div class="row" style="justify-content: space-between;">
+              <span style="font-family: monospace; font-size: 13px; color: #424245;">HUP1sa...9k2m</span>
+              <span style="font-size: 13px; font-weight: 600;">+0.005 SOL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; left: 72px;"><span class="dim2">Solana Group Collection</span></div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; right: 72px;"><span class="slide-number" data-current="7" data-total="10"></span></div>
+    <div class="notes">Live progress demo: blockchain-read progress bar with contributor list and real transaction data.</div>
+  </section>
+
+  <!-- 8. Direct transfers also count -->
+  <section class="slide center tc" data-deck-label="Direct Transfers" style="background: #f5f5f7;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <div class="apple-eyebrow anim-fade-down" data-anim="fade-down" style="margin-bottom: 32px;">The differentiator</div>
+      <h1 class="h1 anim-fade-up" data-anim="fade-up" style="font-size: 80px; line-height: 1.1;">
+        Direct transfers<br>also <span class="apple-gradient">count</span>.
+      </h1>
+      <p class="lede anim-fade-up" data-anim="fade-up" style="font-size: 22px; color: #6e6e73; margin-top: 36px; max-width: 760px; margin-left: auto; margin-right: auto;">
+        We scan the receiver address on-chain, not the link. So even if someone pays directly from their own wallet — without ever opening your page — it still shows up in the progress.
+      </p>
+      <div class="grid g3" style="margin-top: 72px; gap: 32px;">
+        <div class="card-apple" style="padding: 36px; text-align: center;">
+          <div style="font-size: 40px; margin-bottom: 16px;">🔍</div>
+          <h3 style="font-size: 20px; margin: 0 0 8px;">Address-based scanning</h3>
+          <p class="dim" style="font-size: 14px; color: #6e6e73;">We watch the receiver wallet, not individual links.</p>
+        </div>
+        <div class="card-apple" style="padding: 36px; text-align: center;">
+          <div style="font-size: 40px; margin-bottom: 16px;">⚡</div>
+          <h3 style="font-size: 20px; margin: 0 0 8px;">5-second refresh</h3>
+          <p class="dim" style="font-size: 14px; color: #6e6e73;">On-chain reconciler updates progress every few seconds.</p>
+        </div>
+        <div class="card-apple" style="padding: 36px; text-align: center;">
+          <div style="font-size: 40px; margin-bottom: 16px;">🔐</div>
+          <h3 style="font-size: 20px; margin: 0 0 8px;">Double-spend proof</h3>
+          <p class="dim" style="font-size: 14px; color: #6e6e73;">Each transaction hash is recorded once. No duplicates.</p>
+        </div>
+      </div>
+    </div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; left: 72px;"><span class="dim2">Solana Group Collection</span></div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; right: 72px;"><span class="slide-number" data-current="8" data-total="10"></span></div>
+    <div class="notes">Key differentiator: address-based scanning means direct transfers are counted too, with 5-second refresh and dedup.</div>
+  </section>
+
+  <!-- 9. Tech stack -->
+  <section class="slide soft-bg" data-deck-label="Tech Stack">
+    <div class="apple-eyebrow" style="margin-bottom: 24px;">Chapter 04 · The Tech</div>
+    <h2 class="h2 anim-fade-up" data-anim="fade-up" style="font-size: 48px; margin-bottom: 64px;">Built on three things that work.</h2>
+    <div class="grid g3 anim-stagger-list" data-anim-target style="gap: 32px;">
+      <div class="card-apple" style="padding: 44px;">
+        <div style="font-size: 48px; margin-bottom: 24px;">🔷</div>
+        <h3 style="font-size: 28px; margin: 0 0 12px; letter-spacing: -0.02em;">Go</h3>
+        <p class="dim" style="font-size: 15px; color: #6e6e73; line-height: 1.6; margin-bottom: 20px;">Backend API &amp; on-chain reconciler. Compiles to a single binary, ships anywhere.</p>
+        <div class="row" style="gap: 8px; flex-wrap: wrap;">
+          <span class="chip">Gin</span>
+          <span class="chip">GORM</span>
+          <span class="chip">MySQL</span>
+        </div>
+      </div>
+      <div class="card-apple" style="padding: 44px;">
+        <div style="font-size: 48px; margin-bottom: 24px;">▲</div>
+        <h3 style="font-size: 28px; margin: 0 0 12px; letter-spacing: -0.02em;">Next.js</h3>
+        <p class="dim" style="font-size: 15px; color: #6e6e73; line-height: 1.6; margin-bottom: 20px;">TypeScript frontend with App Router. Phantom wallet integration, instant progress UI.</p>
+        <div class="row" style="gap: 8px; flex-wrap: wrap;">
+          <span class="chip">React</span>
+          <span class="chip">Tailwind</span>
+          <span class="chip">@solana/web3.js</span>
+        </div>
+      </div>
+      <div class="card-apple" style="padding: 44px;">
+        <div style="font-size: 48px; margin-bottom: 24px;">◎</div>
+        <h3 style="font-size: 28px; margin: 0 0 12px; letter-spacing: -0.02em;">Solana</h3>
+        <p class="dim" style="font-size: 15px; color: #6e6e73; line-height: 1.6; margin-bottom: 20px;">Devnet. Sub-second finality, fraction-of-a-cent fees. Supports SOL &amp; USDC out of the box.</p>
+        <div class="row" style="gap: 8px; flex-wrap: wrap;">
+          <span class="chip">Devnet</span>
+          <span class="chip">SOL</span>
+          <span class="chip">USDC (SPL)</span>
+        </div>
+      </div>
+    </div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; left: 72px;"><span class="dim2">Solana Group Collection</span></div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; right: 72px;"><span class="slide-number" data-current="9" data-total="10"></span></div>
+    <div class="notes">Tech stack: Go backend, Next.js frontend, Solana blockchain.</div>
+  </section>
+
+  <!-- 10. Thanks -->
+  <section class="slide center tc" data-deck-label="Thanks" style="background: linear-gradient(180deg, #ffffff 0%, #f5f5f7 100%);">
+    <div>
+      <div class="anim-fade-up" data-anim="fade-up" style="font-size: 120px; margin-bottom: 40px;">🎉</div>
+      <h1 class="h1 anim-fade-up" data-anim="fade-up" style="font-size: 120px; line-height: 1;">
+        <span class="apple-gradient">Thank you.</span>
+      </h1>
+      <p class="lede" style="font-size: 22px; color: #6e6e73; margin-top: 32px;">
+        One link. Everyone chips in. The blockchain keeps score.
+      </p>
+      <div class="row" style="justify-content: center; gap: 32px; margin-top: 64px;">
+        <span class="chip">🔗 localhost:3000/merchant/new</span>
+        <span class="chip">◎ Solana Devnet</span>
+      </div>
+    </div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; left: 72px;"><span class="dim2">Solana Group Collection</span></div>
+    <div class="deck-footer" style="position: absolute; bottom: 40px; right: 72px;"><span class="slide-number" data-current="10" data-total="10"></span></div>
+    <div class="notes">Closing slide. Thank the audience and point them to the live demo URL.</div>
+  </section>
+
+</deck-stage>
+<script src="./_shared/runtime.js"></script>
+</body>
+</html>

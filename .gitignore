@@ -1,0 +1,26 @@
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+
+# Node / Next.js
+web/node_modules/
+web/.next/
+web/out/
+web/.turbo/
+
+# Go build artifacts
+*.exe
+main
+
+# Logs
+*.log
+
+# IDE / tooling
+.trae/
+.idea/
+.vscode/
+.DS_Store
+
+# OS junk
+Thumbs.db
